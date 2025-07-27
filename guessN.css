@@ -1,0 +1,69 @@
+*{
+    background-color:  black;
+}
+.heading{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.funny{
+    color: white;
+    font-size: 35px;
+    text-align:center;
+    
+}
+
+.heading, .funny {
+    text-shadow: 0 0 10px #fff, 
+                 0 0 20px #0ff, 
+                 0 0 30px #0ff, 
+                 0 0 40px #0ff;
+}
+
+
+.btn {
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    box-shadow: 0 0 10px #1e90ff;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00bfff;
+    box-shadow: 0 0 20px #00bfff, 0 0 40px #00bfff;
+}
+
+
+.game-area {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+#guess {
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}
+#check {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#check:hover {
+    background-color: #00bfff;
+    box-shadow: 0 0 15px #00bfff;
+}

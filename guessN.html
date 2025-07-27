@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number Game</title>
+    <link rel="stylesheet" href="guessN.css">
+</head>
+<body>
+    <h1 class="heading">Let's begin the game!</h1>
+    <p class="funny">Welcome to the 🔢 Guess-a-thon 3000 — where logic goes to cry.
+Your mission: guess a number the computer made up while laughing. 🤖💀
+Too high? Too low? Too bad. The number doesn’t care. 😎
+Every guess brings you closer to madness... or greatness. 🧠➡️🤯
+Warning: side effects include broken keyboards and existential crises. ⌨️😩
+If you win, you’re a legend. If not... blame the universe. 🌌👽
+Now go forth, brave guesser — and prepare for epic disappointment! 🏹🎯</p>
+<marquee behavior="" direction="left" scrollamount="15"><h3 class="heading">click below to start the game</h3></marquee>
+<button class="btn" type="button">Start</button>
+<div class="game-area" style="display: none;">
+    <p class="funny">Guess a number between 1 and 100:</p>
+    <input type="number" id="guess" />
+    <button id="check">Check</button>
+    <p id="feedback"></p>
+    <p id="attempts">Attempts: 0</p>
+</div>
+
+
+
+<script src="/guessN.js"></script>
+</body>
+</html>
