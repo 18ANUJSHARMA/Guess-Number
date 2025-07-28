@@ -72,21 +72,38 @@ startBtn.addEventListener("click", () => {
 });
 
 document.getElementById("check").addEventListener("click", () => {
-  const guess = Number(document.getElementById("guess").value);
-  attempts++;
+    const guess = Number(document.getElementById("guess").value);
 
-  if (guess === secretNumber) {
-    endGame(true);
-  } else if (guess < secretNumber) {
-    feedback.textContent = "📉 Too low!";
-    feedback.style.color = "orange";
-  } else {
-    feedback.textContent = "📈 Too high!";
-    feedback.style.color = "orange";
-  }
+    // Check for correct guess first
+    if (guess === secretNumber) {
+    feedback.textContent = "🎉 Hurray! You guessed it right!";
+    feedback.classList.add("neon-green");
+    document.getElementById("check").disabled = true;
+    clearInterval(timerInterval);
+    return;
+}
 
-  attemptsText.textContent = `Attempts: ${attempts}`;
+
+    attempts++;
+    attemptsText.textContent = `Attempts: ${attempts}`;
+
+    if (guess < secretNumber) {
+        feedback.textContent = "📉 Too low!";
+        feedback.style.color = "orange";
+    } else {
+        feedback.textContent = "📈 Too high!";
+        feedback.style.color = "orange";
+    }
+
+    // Now check for game over
+    if (attempts >= maxAttempts) {
+        feedback.textContent = `💀 Game Over! The number was ${secretNumber}`;
+        feedback.style.color = "red";
+        document.getElementById("check").disabled = true;
+        clearInterval(timerInterval);
+    }
 });
+
 
 function startTimer(seconds) {
   let timeLeft = seconds;
