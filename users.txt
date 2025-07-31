@@ -1,0 +1,2 @@
+test:$2y$12$4VMkUHu6puiZ.z3S4Jm2F.PVk.c6QY3JGNmvn2bG6Tx0u0wWaMtE2
+king1:$2y$12$ZrL1HnYQyyMWGHttoRbor.FimuJAIeoJKEi7NPBt9t9OszuCu0W3u

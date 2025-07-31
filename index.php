@@ -1,0 +1,59 @@
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guess Number Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2 class="heading">Welcome, <?php echo $_SESSION['username']; ?>! 🎮</h2>
+  <a href="logout.php" class="btn">Logout</a>
+
+  <h1 class="heading">Let's begin the game!</h1>
+  <p class="funny">
+    Welcome to the 🔢 Guess-a-thon 3000 — where logic goes to cry.
+    Your mission: guess a number the computer made up while laughing. 🤖💀
+    Too high? Too low? Too bad. The number doesn’t care. 😎
+    Every guess brings you closer to madness... or greatness. 🧠➡️🤯
+    Warning: side effects include broken keyboards and existential crises. ⌨️😩
+    If you win, you’re a legend. If not... blame the universe. 🌌👽
+    Now go forth, brave guesser — and prepare for epic disappointment! 🏹🎯
+  </p>
+
+  <marquee direction="left" scrollamount="15">
+    <h3 class="heading">click below to start the game</h3>
+  </marquee>
+
+  <div class="difficulty-select">
+    <label for="difficulty">Choose Difficulty:</label>
+    <select id="difficulty">
+      <option value="easy">Easy (1-10)</option>
+      <option value="medium">Medium (1-50)</option>
+      <option value="hard">Hard (1-100)</option>
+    </select>
+  </div>
+
+  <button id="start-btn" class="btn" type="button">Start</button>
+
+  <div class="game-area" style="display: none;">
+    <p class="funny" id="range-text">Guess a number between 1 and 100:</p>
+    <input type="number" id="guess" />
+    <button id="check">Check</button>
+    <p id="feedback"></p>
+    <p id="attempts">Attempts: 0</p>
+    <p id="timer">⏱️ Time Left: <span id="time">0</span> sec</p>
+  </div>
+
+  <button id="theme-toggle" class="btn">Switch to Light Mode</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
