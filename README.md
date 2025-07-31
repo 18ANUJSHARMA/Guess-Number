@@ -4,46 +4,55 @@ Welcome to **Guess-a-thon 3000** — a chaotic mix of logic, luck, neon lights, 
 
 Think you can outsmart the machine? Guess a number between 1 and 100, survive the feedback, and claim your victory (or accept your defeat in style 😎).
 
----
-
-## 🔗 Live Demo
-
-👉 [Click here to play the game](https://18anujsharma.github.io/Guess-Number/)
+### 🔗 Live Demo
+👉 Click here to play the game
 
 ---
 
 ## 🕹️ How to Play
 
-1. Click the **Start** button to begin the madness
+1. Click the **Start** button to begin the madness.
 2. Choose your **difficulty level**:
-   - Easy: 15 attempts
-   - Medium: 10 attempts
-   - Hard: 5 attempts
-3. The system secretly selects a number between 1 and 100
-4. Enter your guess
-5. Click **Check**
-6. Get feedback:
-   - 📈 Too High
+   - **Easy**: 15 attempts
+   - **Medium**: 10 attempts
+   - **Hard**: 5 attempts
+3. The system secretly selects a number between 1 and 100.
+4. Enter your guess and click **Check**.
+5. Receive real-time feedback:
    - 📉 Too Low
+   - 📈 Too High
    - 🎉 Correct!
-7. Game ends if:
-   - You guess the number ✅
-   - You run out of attempts ❌
-8. Click **Play Again** to restart
+
+The game ends if:
+- ✅ You guess the number correctly
+- ❌ You run out of attempts
+- ⏱️ You run out of time
+
+Click **Play Again** to restart!
 
 ---
 
 ## ✨ Features
 
-- 🎯 Random number between 1 and 100
-- ⏱️ Timer tracks how long you take
-- 🔄 Difficulty levels (Easy, Medium, Hard)
-- 💬 Funny emoji-rich feedback
-- 📊 Tracks attempts and best score
+- 🎯 Random number generation (1–100)
+- ⏱️ Countdown timer based on difficulty
+- 🎮 Difficulty levels (Easy, Medium, Hard)
+- 💬 Emoji-rich feedback messages
+- 🔢 Tracks attempts and outcome
 - 🌗 Dark / Light theme toggle
-- 🔁 Restart anytime with Play Again button
 - ⚡ Neon-glow UI aesthetic
 - 💻 Fully responsive for desktop and mobile
+- 🔁 "Play Again" button resets the game
+
+---
+
+## 💡 New PHP Features
+
+- 🔐 **Login System** – Basic PHP-based user authentication
+- 📊 **Session Tracking** – Game progress is now tracked via PHP sessions
+- 💾 **Score Persistence** – User scores stored server-side (e.g., using files or a database)
+- 🕵️‍♂️ **Basic Server-Side Validation** – Prevents cheating and ensures consistent gameplay
+- 📁 Converted `index.html` to `index.php` to support dynamic features
 
 ---
 
@@ -51,15 +60,24 @@ Think you can outsmart the machine? Guess a number between 1 and 100, survive th
 
 - **HTML5** – Page structure
 - **CSS3** – Styling + glowing visual effects
-- **JavaScript (ES6)** – Core game logic and UI interactions
+- **JavaScript (ES6)** – Game logic and UI interactivity
+- **PHP (8+)** – Authentication, session handling, backend validation
 
 ---
 
 ## 🗂️ Project Structure
 
-```bash
-Guess-Number/
-├── index.html        # Main HTML page
-├── style.css         # Styles and themes
-├── script.js         # Game logic + interactions
-├── assets/           # (Optional) Images or future assets
+
+
+
+
+---
+
+## 🚀 Coming Soon
+
+- 🏆 Leaderboard
+- 🧾 Save game history
+- 🎨 Theme customization
+- 🌍 Language options
+
+
